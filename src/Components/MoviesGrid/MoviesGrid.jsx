@@ -41,10 +41,10 @@ const mapStateToProps = (state) => {
     }
 };
 
+export { MoviesGrid as TestableMoviesGrid };
+
 const hocChain = compose(
     connect(mapStateToProps, null),
 );
 
 export default hocChain(MoviesGrid);
-
-export { MoviesGrid as TestableMoviesGrid }

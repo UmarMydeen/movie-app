@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { TestableMoviesGrid as MoviesGrid } from './MoviesGrid';
-import movieMock from '../../__mocks__/movieMock';
+import movieMock from '../../../__mocks__/movieMock';
 
 let mockProps;
 

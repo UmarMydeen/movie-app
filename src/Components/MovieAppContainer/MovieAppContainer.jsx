@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import MovieFilterBar from '../MoviesFilterBar/MoviesFilterBar';
 import MoviesGrid from '../MoviesGrid/MoviesGrid';
-import { withRouter } from 'react-router';
 import getMovieList from '../../actions/fetchMovieList';
 
 const MovieAppContainer = ({
@@ -32,8 +31,9 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
+export { MovieAppContainer as TestableMovieAppContainer };
+
 const hocChain = compose(
-    withRouter,
     connect(null, mapDispatchToProps),
 );
 

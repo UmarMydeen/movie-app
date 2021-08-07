@@ -1,6 +1,6 @@
 import { getByTestId, render, screen } from '@testing-library/react';
 import MovieCard from './MovieCard';
-import movieMock from '../../__mocks__/movieMock';
+import movieMock from '../../../__mocks__/movieMock';
 
 let mockProps;
 
