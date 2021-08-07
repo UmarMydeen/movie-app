@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({
     movie: {
@@ -10,16 +10,14 @@ const MovieCard = ({
     }
 }) => {
     return (
-        <BrowserRouter>
-            <Link to={`/movieDetails/${imdbID}`}>
-                <div data-testid={imdbID} className="card m-1" key={imdbID}>
-                    <img src={imageUrl} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">{title}</h5>
-                    </div>
+        <Link to={`/movieDetails/${imdbID}`}>
+            <div data-testid={imdbID} className="card m-1" key={imdbID}>
+                <img src={imageUrl} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
                 </div>
-            </Link >
-        </BrowserRouter>
+            </div>
+        </Link >
     );
 }
 
