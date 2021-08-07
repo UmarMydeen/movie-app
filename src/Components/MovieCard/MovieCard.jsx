@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
-function MovieCard({
+const MovieCard = ({
     movie: {
         imdbID,
         Poster: imageUrl,
         Title: title,
     }
-}) {
+}) => {
     return (
-        <Link to={`/movieDetails/${imdbID}`}>
-            <div data-testid={imdbID} className="card m-1" key={imdbID}>
-                <img src={imageUrl} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
+        <BrowserRouter>
+            <Link to={`/movieDetails/${imdbID}`}>
+                <div data-testid={imdbID} className="card m-1" key={imdbID}>
+                    <img src={imageUrl} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{title}</h5>
+                    </div>
                 </div>
-            </div>
-        </Link >
+            </Link >
+        </BrowserRouter>
     );
 }
 

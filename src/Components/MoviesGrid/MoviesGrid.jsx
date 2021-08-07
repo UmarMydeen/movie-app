@@ -2,7 +2,6 @@ import React from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import fetchMovieList from '../../actions/fetchMovieList';
 import MovieCard from '../MovieCard/MovieCard';
 import {
     getMovieList,
@@ -26,8 +25,13 @@ const MoviesGrid = ({
 }
 
 MoviesGrid.propTypes = {
-    movieList: PropTypes.array.isRequired,
-    dataSource: PropTypes.array.isRequired,
+    movieList: PropTypes.array,
+    dataSource: PropTypes.array,
+};
+
+MoviesGrid.defaultProps = {
+    movieList: [],
+    dataSource: [],
 };
 
 const mapStateToProps = (state) => {
@@ -42,3 +46,5 @@ const hocChain = compose(
 );
 
 export default hocChain(MoviesGrid);
+
+export { MoviesGrid as TestableMoviesGrid }
