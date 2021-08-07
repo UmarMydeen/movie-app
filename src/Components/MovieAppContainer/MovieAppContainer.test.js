@@ -8,7 +8,7 @@ import rootReducer from '../../Reducers/index';
 let mockProps;
 
 const initialState = {
-    user: { name: "mock name" },
+    movie: []
 };
 
 const store = createStore(rootReducer, initialState);

@@ -15,7 +15,7 @@ Object {
           <img
             alt="..."
             class="card-img-top"
-            src="mockPoster"
+            src="mockUrl"
           />
           <div
             class="card-body"
@@ -41,7 +41,7 @@ Object {
         <img
           alt="..."
           class="card-img-top"
-          src="mockPoster"
+          src="mockUrl"
         />
         <div
           class="card-body"
