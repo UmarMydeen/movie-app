@@ -17,6 +17,7 @@ const ConnectedDropdown = ({
                 class="form-select"
                 aria-label="Default select example"
                 onChange={onSelection}
+                data-testid='connectedDropdown'
             >
                 <option selected value="">--Select--</option>
                 {

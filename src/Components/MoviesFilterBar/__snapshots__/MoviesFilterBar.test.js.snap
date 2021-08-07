@@ -51,6 +51,7 @@ Object {
             <select
               aria-label="Default select example"
               class="form-select"
+              data-testid="connectedDropdown"
             >
               <option
                 value=""
@@ -80,6 +81,7 @@ Object {
             <select
               aria-label="Default select example"
               class="form-select"
+              data-testid="connectedDropdown"
             >
               <option
                 value=""
@@ -165,6 +167,7 @@ Object {
           <select
             aria-label="Default select example"
             class="form-select"
+            data-testid="connectedDropdown"
           >
             <option
               value=""
@@ -194,6 +197,7 @@ Object {
           <select
             aria-label="Default select example"
             class="form-select"
+            data-testid="connectedDropdown"
           >
             <option
               value=""
