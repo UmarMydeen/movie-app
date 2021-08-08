@@ -39,7 +39,7 @@ const LoginForm = ({
             <div className="container w-25">
                 <form onSubmit={onFormSubmit}>
                     <div className="mb-3">
-                        <label for="email" className="form-label" > Email address</label >
+                        <label for="email" className="form-label" > UserName </label >
                         <input
                             type="text"
                             className="form-control"
@@ -57,7 +57,7 @@ const LoginForm = ({
                             onChange={inputOnchange}
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary" data-testid='loginFormBtn'>Submit</button>
                 </form >
             </div >
         )
