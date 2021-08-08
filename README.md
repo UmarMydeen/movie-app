@@ -13,8 +13,8 @@ Movie Application which as below feature
 
 ### Movie Dashboard
 
-<img src="https://github.com/UmarMydeen/movie-app/blob/main/srceenshots/dashboard.png">
+<img src="https://github.com/UmarMydeen/movie-app/blob/main/screenshots/dashboard.png">
 
 ### Movie Detail Page
 
-<img src="https://github.com/UmarMydeen/movie-app/blob/main/srceenshots/detailPage.png">
+<img src="https://github.com/UmarMydeen/movie-app/blob/main/screenshots/detailPage.png">
