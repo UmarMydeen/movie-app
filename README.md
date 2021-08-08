@@ -10,3 +10,11 @@ Movie Application which as below feature
 - To run this application with backend, downlaod the backend project from this repository movie-node and follow the steps to launch the application
 - Browse the localhost has suggested in command prompt
 - If in case backend is configured, serve the `json-server` by poiting the local `movies.json` in fake folder.
+
+### Movie Dashboard
+
+<img src="https://github.com/UmarMydeen/movie-app/blob/main/srceenshots/dashboard.png">
+
+### Movie Detail Page
+
+<img src="https://github.com/UmarMydeen/movie-app/blob/main/srceenshots/detailPage.png">
