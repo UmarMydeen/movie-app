@@ -1,8 +1,9 @@
 import { MOVIE_LIST } from '../Constants/IssueConstants';
+import config from '../config';
 
 const fetchMovieList = () => async (dispatch) => {
     let movieList = [];
-    const data = await fetch('http://localhost:8080/movies').then(
+    const data = await fetch(`${config.baseUrl}/movies`).then(
         response => response.json()
     );
 
