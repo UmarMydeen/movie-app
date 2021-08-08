@@ -1,5 +1,5 @@
 const config = {
-    baseUrl: 'https://frozen-brook-16543.herokuapp.com'
+    baseUrl: 'http://localhost:8080'
 }
 
-export default config;
+export default config
