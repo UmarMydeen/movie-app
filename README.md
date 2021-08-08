@@ -9,7 +9,7 @@ Movie Application which has below features
 - do run `npm install`
 - To run this application with backend, downlaod the backend project from [movie-app-node](https://github.com/UmarMydeen/movie-app-node) and follow the steps to launch the application
 - Update the baseUrl in config.js
-- If in case backend is not configured, update the heroku hosted node-app in baseUrl `https://frozen-brook-16543.herokuapp.com`
+- If in case backend is not configured, update the heroku hosted node-app in config file baseUrl as `https://frozen-brook-16543.herokuapp.com`
 - Browse to the url as suggested in the command prompt and you will be routed to login page. use this credential to login `userName:flower, password: flower123`
 
 ## Screenshots
