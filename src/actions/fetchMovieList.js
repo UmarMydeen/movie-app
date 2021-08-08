@@ -1,4 +1,4 @@
-import { MOVIE_LIST } from "../Constants/IssueConstants";
+import { MOVIE_LIST } from '../Constants/IssueConstants';
 
 const fetchMovieList = () => async (dispatch) => {
     let movieList = [];

@@ -22,9 +22,6 @@ Object {
               >
                 Title
               </dt>
-              <p
-                data-testid="title"
-              />
               <dd
                 class="col-sm-9"
                 data-testid="titles"
@@ -63,6 +60,11 @@ Object {
             />
           </div>
         </div>
+        <button
+          class="btn btn-secondary"
+        >
+          Back
+        </button>
       </div>
     </div>
   </body>,
@@ -84,9 +86,6 @@ Object {
             >
               Title
             </dt>
-            <p
-              data-testid="title"
-            />
             <dd
               class="col-sm-9"
               data-testid="titles"
@@ -125,6 +124,11 @@ Object {
           />
         </div>
       </div>
+      <button
+        class="btn btn-secondary"
+      >
+        Back
+      </button>
     </div>
   </div>,
   "debug": [Function],

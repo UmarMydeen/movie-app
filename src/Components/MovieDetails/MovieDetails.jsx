@@ -1,12 +1,14 @@
 import React from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import getMovideById from '../../actions/getMovieById';
 
 function MovieDetails({
     match: { params: { id } },
-    actionGetMovideById
+    actionGetMovideById,
+    history
 }) {
     const [movie, setMovie] = React.useState({});
 
@@ -16,6 +18,10 @@ function MovieDetails({
     }, [])
 
     const { Stills, Title, Plot, imdbRating, Poster } = movie;
+
+    const backToMovies = () => {
+        history.push('/movies')
+    }
 
     return (
         <div className="container">
@@ -47,6 +53,7 @@ function MovieDetails({
                     </div>
                 </div>
             </div >
+            <button className="btn btn-secondary" onClick={backToMovies}>Back</button>
         </div>
     );
 }
@@ -54,9 +61,10 @@ function MovieDetails({
 MovieDetails.propTypes = {
     match: {
         params: {
-            id: PropTypes.string.isRequired
+            id: PropTypes.string.isRequired,
         }
     },
+    history: PropTypes.shape({}).isRequired,
     actionGetMovideById: PropTypes.func.isRequired
 };
 
@@ -69,6 +77,7 @@ const mapDispatchToProps = (dispatch) => {
 export { MovieDetails as TestableMovieDetails };
 
 const hocChain = compose(
+    withRouter,
     connect(null, mapDispatchToProps),
 );
 
