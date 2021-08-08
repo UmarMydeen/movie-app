@@ -6,7 +6,7 @@ Movie Application which as below feature
 
 ## Steps to follow to run this application
 
--- do run `npm install`
--- To run this application with backend, downlaod the backend project from this repository movie-node and follow the steps to launch the application
--- Browse the localhost has suggested in command prompt
--- If in case backend is configured, serve the `json-server` by poiting the local `movies.json` in fake folder.
+- do run `npm install`
+- To run this application with backend, downlaod the backend project from this repository movie-node and follow the steps to launch the application
+- Browse the localhost has suggested in command prompt
+- If in case backend is configured, serve the `json-server` by poiting the local `movies.json` in fake folder.
