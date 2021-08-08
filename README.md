@@ -11,6 +11,12 @@ Movie Application which as below feature
 - Browse the localhost has suggested in command prompt
 - If in case backend is configured, serve the `json-server` by poiting the local `movies.json` in fake folder.
 
+## Screenshots
+
+### Login Screen
+
+<img src="https://github.com/UmarMydeen/movie-app/blob/main/screenshots/loginscreen.png">
+
 ### Movie Dashboard
 
 <img src="https://github.com/UmarMydeen/movie-app/blob/main/screenshots/dashboard.png">
